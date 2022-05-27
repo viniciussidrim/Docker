@@ -1,0 +1,3 @@
+<?
+	echo "Teste em PHP";
+?>
