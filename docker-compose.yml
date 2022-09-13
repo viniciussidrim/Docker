@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  teste-postgres-compose:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "TESTE@TESTE"
+    ports:
+      - "15432:5432"
+    volumes:
+      - /home/*ALTERAR_DIRETORIOS*/conhecendoLaravel:/var/lib/postgresql/data
+
+# PRE REQUISITOS 
+# DOCKER
+# DOCKER-COMPOSE
+# DOCKER DESKTOP
+
+
+# COMANDOS
+# sudo docker-compose up -d
+# sudo docker network ls
+# sudo docker-compose ps
+# acesso via localhost:port
