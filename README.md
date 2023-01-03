@@ -1,5 +1,5 @@
 # Estudo de Docker
 
-Script 1 - Criado Script em PHP de um simples Hello World para rodar em Container Apache
+Script 1 - Criado Dockerfile com imagem do apache para exibir hello world em php
 
-Script 2 - Arquivo de instalação para instalação Postgress
+Script 2 - Arquivo docker-compose para subir banco Postgres já com volume configurado
