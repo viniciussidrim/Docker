@@ -14,7 +14,8 @@ services:
         volumes:
             - ./dados_banco:/var/lib/postgresql/data
 
-#ao exececutar 
+#criar pasta nesse diretório com nome dados_banco
+#apos, exececutar 
 #docker-compose up -d
-#os dados do banco serão gerados na pasta dados_banco nesse mesmo diretório
-#caso realizar push, limpar pasta anteriormente
+#os dados do banco serão gerados na pasta dados_banco
+#caso realizar push, limpar pasta anteriormente ou apagar caso deletar dados
