@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  jenkins:
+    build:
+      context: .
+    ports:
+      - '8084:8080'
+      - '50000:50000'
+    volumes:
+      - 'jenkins_home:/var/jenkins_home'
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+volumes:
+  jenkins_home:
+    driver: local
